@@ -65,7 +65,7 @@ ORDER BY o.OrderDate DESC;
 SELECT o.OrderID, SUM(od.TotalCost) AS OrderTotal
 FROM Orders o
 JOIN OrderDetails od ON o.OrderID = od.OrderID
-WHERE o.OrderID = :id -- пример UUID заказа
+WHERE o.OrderID = :id
 GROUP BY o.OrderID;
 ```
 5) Подсчет количества товаров на складе
