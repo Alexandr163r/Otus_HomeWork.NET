@@ -3,8 +3,7 @@ using System.Diagnostics;
 using OtusTask;
 
 var stopwatch = Stopwatch.StartNew();
-var baseDir = AppContext.BaseDirectory;
-var derictoryFiles = Path.GetFullPath(Path.Combine(baseDir, "..", "..", "..", "Files"));
+var derictoryFiles = Console.ReadLine();
 
 var txtSpaceCounter = new TxtSpaceCounter();
 await txtSpaceCounter.CountSpacesInDirectoryAsynс(derictoryFiles);
