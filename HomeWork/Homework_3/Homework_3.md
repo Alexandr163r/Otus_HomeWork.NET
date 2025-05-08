@@ -6,11 +6,11 @@
 
 ## Результат с выводом в консоль
 
-![2](https://github.com/Alexandr163r/Otus_HomeWork.NET/blob/main/img/Task2.png)
+![2](https://github.com/Alexandr163r/Otus_HomeWork.NET/blob/main/img/Task3.png)
 
 ## Добавил текста
 
-![3](https://github.com/Alexandr163r/Otus_HomeWork.NET/blob/main/img/Task3.png)
+![3](https://github.com/Alexandr163r/Otus_HomeWork.NET/blob/main/img/Task2.png)
 
 ## Добавил файлов
 
