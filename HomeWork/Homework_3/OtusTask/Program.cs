@@ -1,16 +1,26 @@
-﻿
-using System.Diagnostics;
-using OtusTask;
+﻿using OtusTask;
 
-var stopwatch = Stopwatch.StartNew();
+//Оставил вызов прошлого ассинхронного варианта.   
+// if (string.IsNullOrWhiteSpace(directoryFiles))
+// {
+//     Console.WriteLine("Путь к директории не может быть пустым!");
+//     return;
+// }
+//
+// var txtSpaceCounter = new TxtSpaceCounter();
+// await txtSpaceCounter.CountSpacesInDirectoryAsynс(directoryFiles);
+
 var directoryFiles = Console.ReadLine();
 
-if (string.IsNullOrWhiteSpace(directoryFiles))
+if (directoryFiles != null)
 {
-    Console.WriteLine("Путь к директории не может быть пустым!");
-    return;
+    var reader = new ParallelFileReader();
+    reader.ReadAllFilesInDirectory(directoryFiles);
+    Console.ReadKey();
+}
+else
+{
+    Console.WriteLine("Не передана дериктория с файлами");
 }
 
-var txtSpaceCounter = new TxtSpaceCounter();
-await txtSpaceCounter.CountSpacesInDirectoryAsynс(directoryFiles);
-Console.WriteLine($"Время выполнения {stopwatch.Elapsed}");
+
